@@ -13,6 +13,7 @@ const initialState: State = {
     didAgreeToTerms: false,
     didCompleteTutorial: false,
     didCreatePIN: false,
+    didConsiderBiometry: false,
   },
   credential: {
     revoked: new Set(),
@@ -20,6 +21,9 @@ const initialState: State = {
   },
   privacy: {
     didShowCameraDisclosure: false,
+  },
+  preferences: {
+    useBiometry: false,
   },
   error: null,
   loading: false,
